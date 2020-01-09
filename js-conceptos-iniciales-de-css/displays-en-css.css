@@ -1,0 +1,96 @@
+/*
+Todos los elementos en CSS son cuadrados o rectángulos y aparte de eso, 
+estos elementos tienen un comportamiento que se define a 
+través de la propiedad display. 
+
+Los display más comunes y usados son: 
+block, inline, inline-block, none, table, flex y grid. 
+
+Veamos de qué se tratan:
+
+***Block
+Quiero que pensemos en este display como el flujo que tenemos cada vez que 
+escribimos.
+
+Por ejemplo, nosotros escribimos  de izquierda a derecha, pero cuando se nos 
+acaba el espacio horizontalmente, seguimos abajo.
+
+Este es el flujo de bloque en nuestra escritura(de arriba a abajo) y es 
+exactamente el que obedece display block, lo que quiere decir que los elementos
+se visualizan uno debajo del otro.
+
+Alguno elementos que por defecto tiene este tipo de display son:
+div p h1 section y ul
+
+***inline
+
+Todos los elementos con este display se visualizarán uno al lado del otro
+de izquierda a derecha.
+
+alguos elementos que por defecto tiene este tipo de display son: 
+span em y b
+
+
+***inline-block
+
+este display es muy similar al display inline, sin embargo este respeta el width y
+el height que se le asigne a los elementos.
+
+***None
+
+Este display es utilizado para ocultar elementos sin eliminarlos por completo
+del DOM
+
+***Table
+
+Los elementos con este display se comportan como los elementos table
+
+
+***Felx
+
+Centrar elementos, alinearlos a la derecha o a la izquierda, siempre ha sido una tarea difícil.
+sin embargo, llega flexbox para ayudarnos con este dilema.
+
+para usar flexbox es indispensable la propiedad display:flex en el elemento
+padre que por defecto alineará los elementos hijos de izquierda a derecha.
+
+También este display suele acompañarse por otras propiedades como justify-content y align-items.
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+***Grid
+
+Despues de flexbox, llega el mas poderos sistema de layout Css grid y para 
+implementarlo debemos hacer uso de display: grid en el elemento
+contenedor o elemento padre.
+
+
+al igula que con flexbox, css grid requiere de un estudio adicional ya que no basta con 
+colocar este display. para ello te dejo la siguiente guía
+
+https://css-tricks.com/snippets/css/complete-guide-grid/
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/

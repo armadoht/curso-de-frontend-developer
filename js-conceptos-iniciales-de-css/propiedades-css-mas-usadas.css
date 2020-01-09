@@ -1,0 +1,132 @@
+/*
+***width
+Define el ancho de un elemento
+
+***height
+Define el alto de un elemento
+
+***Background
+puede definir el color de fondo a la url
+de fondo de un elemento
+
+***color
+
+Define el color de nuestros textos. estos colores los podemos 
+escribir de 3 formas en css
+
+-sistema hexadecimal
+-nombre de los colores
+-rgb red,green,blue con valor de 0 a 255
+
+Tambien a estos valores de les puede agregar una opacidad (transparencia)
+que va de 0 a 1, por ejemplo rgba(0,255,0,0,0.5) lo que quiere decir que 
+el color verde lo queremos con una trasparencia del 50%
+
+***Borde
+
+Define el tamaño, estilo y color del borde de un elemento
+border:2px solid yellow
+
+***Border-radius
+
+Define qué tan redondeado quiero mi elemento, por ejemplo:
+
+border-radius: 20px;
+
+***Margin
+
+Define el margen de un elemento. Por ejemplo
+
+Margin 2px lo que quiere decir que mi elemento tendrá márgenes en todos sus
+lados de 2px.
+
+margin: 2px, 2px, 2px, 2px;
+margin-top, margin-right, margin-botton, margin-left
+
+
+***Padding
+
+Define la distancia del borde de un elemento hasta cu contenido. Por
+ejemplo
+
+Padding 2px lo que quiere decir que mi elemento tendra un "margen interno"
+en todos sus lados de 2px.
+
+padding: 2px,3px,4px,5px;
+
+padding-top, padding-right, padding-botton, margin-left
+
+
+***Font-siz
+Define el tamaño de la fuente
+font-size:20px
+
+
+
+***Font-family
+Define la familia tipografica de la fuente
+
+https://fonts.google.com
+
+***Opacity
+
+Determina la transparencia del elemento. Tiene valores entre 0 y 1, que 
+pueden verse como un porcentaje. por ejemplo, si quiero que mi elemento
+se vea con una transparencia del 50% escribiría 
+opacity:0.5;
+
+***Outline
+
+Un término algo desconocido es el esquema de los elementos HTML.
+Un esquema es una línea(por defecto de color azúl) que se dibuja alrededor
+de elementos que hace que se destaque.
+
+Lo anterior sucede mucho el elementos como los inputs y los button. Si no
+queremos ver esa línea, lo que hacemos es:
+
+outline:none
+
+outline-style:solid;
+outline-color:red;
+outline-width:5px;
+
+
+***Box-Sizing
+Cuando trabajamos con paddings, por ejemplo, veremos que el tamaño de 
+nuestro elemento crecer.
+
+div{
+    background:pink;
+    widht: 20px;
+    heigth: 20px;
+}
+
+y luego le agrego un padding de 20px,
+veré en el navegador que mi div ya no tiene un ancho y un alto
+de 20px sino de 40px cada uno.
+
+Lo que quiere decir que el padding hizo que creciera mi elemento.
+sin embargo si yo no quiero que el padding afecte los 20px originales,
+le agrego la propiedad box-sizing para que el tamaño total del elemento
+incluya el padding también y no se vea afectado por él.
+
+
+***Transition
+Las transiciones Css le permiten cambiar los valores de las propiedades sin
+problemas durante una duración determinada.
+
+Una transición No es una animación Una transición va de un punto A a un punto B
+sin interupciones o saltos en medio.
+
+https://css-tricks.com/almanac/properties/t/transition
+
+***Animations
+Esta propiedad permite que animemos nuestros elementos.
+
+https://css-tricks.com/almanac/properties/a/animation/
+
+
+
+
+
+*/
