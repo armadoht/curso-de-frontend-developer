@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BEM Bloque Elemento Modificador</title>
+</head>
+<body>
+    <!-- Una de las metodologías que podemos utilizar para 
+        organizar nuestro código es 
+        BEM (Bloque, Elemento, Modificador).
+
+    A continuación, te mostraré 3 bloques de código. 
+    Identifica cuál bloque de código es el indicado 
+    para usar esta metodología.-->
+
+    <!--Bloque 1-->
+    <header class="header">Platzi-Video</header>
+    <section class="main__img">
+        <img class="main--img" src="" alt="">
+        <form class="main--form" action="">
+            <input type="text" placeholder="Nombre">
+            <input type="password" placeholder="Contraseña">
+        </form>
+    </section>
+
+    <footer class="footer__item">
+        <a class="footer" href="">Contáctanos</a>
+        <a class="footer" href="">Política de privacidad</a>
+        <a class="footer" href="">Términos y condiciones</a>
+    </footer>
+
+    <!--Bloque 2-->
+    
+
+    <header class="header">Platzi-Video</header>
+    <section class="main">
+        <img class="main--img" src="" alt="">
+        <form class="main--form" action="">
+            <input type="text">
+            <input type="password">
+        </form>
+    </section>
+    <footer class="footer">
+        <a href="item"></a>
+        <a href="item"></a>
+        <a href="item"></a>
+    </footer>
+
+    <!--Bloque 3 OK BEM Bloque, Elemento y Modificador de BEM-->
+    <header class="header">Platzi-Video</header>
+    <section class="main">
+        <img class="main__img" src="" alt="Photo">
+        <form class="main__form" action="">
+            <input class="main__form--input" type="text" placeholder="Nombre">
+            <input class="main__form--input" type="text" placeholder="Contraseña">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <a class="footer__item" href="">Contáctanos</a>
+        <a class="footer__item" href="">Política de privacidad</a>
+        <a class="footer__item" href="">Términos y condiciones</a>
+    </footer>
+</body>
+</html>
