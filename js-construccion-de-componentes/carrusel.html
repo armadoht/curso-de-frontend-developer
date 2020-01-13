@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .carrusel {
+            width: 100%;
+            position: relative;
+            padding: 30px;
+            overflow: scroll;
+        }
+
+        .carrusel__container {
+            white-space: nowrap;
+            margin: 70px 0px;
+            padding-bottom: 10px;
+        }
+
+        .carrusel__item {
+            background-color: turquoise;
+            width: 200px;
+            height: 250px;
+            border-radius: 20px;
+            overflow: hidden;
+            margin: 10px;
+            display: inline-block;
+            cursor: pointer;
+            transition: 450ms all;
+            transform-origin: center left;
+        }
+
+        .carrusel__item:hover ~ .carrusel__item:hover{
+            transform: translate3d(10px,0,0)
+        }
+
+        .carrusel__container:hover .carrusel__item {
+            opacity: 0.3;
+        }
+
+        .carrusel__container:hover .carrusel__item:hover{
+            transform: scale(1.5);
+            opacity: 1;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <section class="carrusel">
+        <div class="carrusel__container">
+            <div class="carrusel__item">
+
+            </div>
+            <div class="carrusel__item">
+
+            </div>
+            <div class="carrusel__item">
+
+            </div>
+            <div class="carrusel__item">
+
+            </div>
+            <div class="carrusel__item">
+
+            </div>
+            <div class="carrusel__item">
+
+            </div>
+            <div class="carrusel__item">
+
+            </div>            
+        </div>
+    </section>
+    <section class="carrusel">
+        <div class="carrusel__container">
+            <div class="carrusel__item">
+
+            </div>
+            <div class="carrusel__item">
+
+            </div>
+            <div class="carrusel__item">
+
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
