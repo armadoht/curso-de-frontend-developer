@@ -11,20 +11,20 @@
             margin: 0px;
         }
 
-        .carrusel {
+        .carousel {
             width: 100%;
             position: relative;
             padding: 30px;
             overflow: scroll;
         }
 
-        .carrusel__container {
+        .carousel__container {
             white-space: nowrap;
             margin: 70px 0px;
             padding-bottom: 10px;
         }
 
-        .carrusel__item {
+        .carousel-item {
             background-color: turquoise;
             width: 200px;
             height: 250px;
@@ -35,61 +35,174 @@
             cursor: pointer;
             transition: 450ms all;
             transform-origin: center left;
+            position: relative;
         }
 
-        .carrusel__item:hover ~ .carrusel__item:hover{
+        .carousel-item:hover ~ .carousel-item:hover{
             transform: translate3d(10px,0,0)
         }
 
-        .carrusel__container:hover .carrusel__item {
+        .carousel__container:hover .carousel-item {
             opacity: 0.3;
         }
 
-        .carrusel__container:hover .carrusel__item:hover{
+        .carousel__container:hover .carousel-item:hover{
             transform: scale(1.5);
             opacity: 1;
         }
-
+        .carousel-item__img{
+            width: 200px;
+            height: 250px;
+            object-fit: cover;
+        }
+        .carousel-item__details{
+            background: linear-gradient(to top,rgba(0,0,0)0%, rgba(0,0,0) 100%);
+            font-size: 10px;
+            opacity: 0.3;
+            transform: 450ms opacity;
+            padding: 10px;
+            position: absolute;
+            top: 180px;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
+        .carousel-item__details img {
+            width: 20px;
+        }
+        .carousel-item__details--title{
+            font-size: 10px;
+            font-weight: bold;
+            color: white;
+            line-height: 0;
+        }
+        .carousel-item__details--subtitle{
+            font-size: 7px;
+            color: white;
+        }
+        .carousel-item__details:hover{
+            opacity: 1;
+        }
 
     </style>
 </head>
 
 <body>
-    <section class="carrusel">
-        <div class="carrusel__container">
-            <div class="carrusel__item">
-
+    <section class="carousel">
+        <div class="carousel__container">
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="https://images.pexels.com/photos/3429761/pexels-photo-3429761.jpeg?cs=srgb&dl=people-in-front-of-brown-concrete-building-while-feeding-3429761.jpg&fm=jpg" alt="Photo">
+                <div class="carousel-item__details">
+                    <div>
+                        <img src="https://img.icons8.com/flat_round/64/000000/play--v1.png">
+                        <img src="https://img.icons8.com/plasticine/100/000000/plus-2-math.png">
+                    </div>
+                    <p class="carousel-item__details--title">Titulo descriptivo</p>
+                    <p class="carousel-item__details--subtitle">Titulo descriptivo</p>
+                </div>
             </div>
-            <div class="carrusel__item">
-
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="https://images.pexels.com/photos/3429761/pexels-photo-3429761.jpeg?cs=srgb&dl=people-in-front-of-brown-concrete-building-while-feeding-3429761.jpg&fm=jpg" alt="Photo">
+                <div class="carousel-item__details">
+                    <div>
+                        <img src="https://img.icons8.com/flat_round/64/000000/play--v1.png">
+                        <img src="https://img.icons8.com/plasticine/100/000000/plus-2-math.png">
+                    </div>
+                    <p class="carousel-item__details--title">Titulo descriptivo</p>
+                    <p class="carousel-item__details--subtitle">Titulo descriptivo</p>
+                </div>
             </div>
-            <div class="carrusel__item">
-
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="https://images.pexels.com/photos/3429761/pexels-photo-3429761.jpeg?cs=srgb&dl=people-in-front-of-brown-concrete-building-while-feeding-3429761.jpg&fm=jpg" alt="Photo">
+                <div class="carousel-item__details">
+                    <div>
+                        <img src="https://img.icons8.com/flat_round/64/000000/play--v1.png">
+                        <img src="https://img.icons8.com/plasticine/100/000000/plus-2-math.png">
+                    </div>
+                    <p class="carousel-item__details--title">Titulo descriptivo</p>
+                    <p class="carousel-item__details--subtitle">Titulo descriptivo</p>
+                </div>
             </div>
-            <div class="carrusel__item">
-
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="https://images.pexels.com/photos/3429761/pexels-photo-3429761.jpeg?cs=srgb&dl=people-in-front-of-brown-concrete-building-while-feeding-3429761.jpg&fm=jpg" alt="Photo">
+                <div class="carousel-item__details">
+                    <div>
+                        <img src="https://img.icons8.com/flat_round/64/000000/play--v1.png">
+                        <img src="https://img.icons8.com/plasticine/100/000000/plus-2-math.png">
+                    </div>
+                    <p class="carousel-item__details--title">Titulo descriptivo</p>
+                    <p class="carousel-item__details--subtitle">Titulo descriptivo</p>
+                </div>
             </div>
-            <div class="carrusel__item">
-
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="https://images.pexels.com/photos/3429761/pexels-photo-3429761.jpeg?cs=srgb&dl=people-in-front-of-brown-concrete-building-while-feeding-3429761.jpg&fm=jpg" alt="Photo">
+                <div class="carousel-item__details">
+                    <div>
+                        <img src="https://img.icons8.com/flat_round/64/000000/play--v1.png">
+                        <img src="https://img.icons8.com/plasticine/100/000000/plus-2-math.png">
+                    </div>
+                    <p class="carousel-item__details--title">Titulo descriptivo</p>
+                    <p class="carousel-item__details--subtitle">Titulo descriptivo</p>
+                </div>
             </div>
-            <div class="carrusel__item">
-
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="https://images.pexels.com/photos/3429761/pexels-photo-3429761.jpeg?cs=srgb&dl=people-in-front-of-brown-concrete-building-while-feeding-3429761.jpg&fm=jpg" alt="Photo">
+                <div class="carousel-item__details">
+                    <div>
+                        <img src="https://img.icons8.com/flat_round/64/000000/play--v1.png">
+                        <img src="https://img.icons8.com/plasticine/100/000000/plus-2-math.png">
+                    </div>
+                    <p class="carousel-item__details--title">Titulo descriptivo</p>
+                    <p class="carousel-item__details--subtitle">Titulo descriptivo</p>
+                </div>
             </div>
-            <div class="carrusel__item">
-
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="https://images.pexels.com/photos/3429761/pexels-photo-3429761.jpeg?cs=srgb&dl=people-in-front-of-brown-concrete-building-while-feeding-3429761.jpg&fm=jpg" alt="Photo">
+                <div class="carousel-item__details">
+                    <div>
+                        <img src="https://img.icons8.com/flat_round/64/000000/play--v1.png">
+                        <img src="https://img.icons8.com/plasticine/100/000000/plus-2-math.png">
+                    </div>
+                    <p class="carousel-item__details--title">Titulo descriptivo</p>
+                    <p class="carousel-item__details--subtitle">Titulo descriptivo</p>
+                </div>
             </div>            
         </div>
     </section>
-    <section class="carrusel">
-        <div class="carrusel__container">
-            <div class="carrusel__item">
-
+    <section class="carousel">
+        <div class="carousel__container">
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="https://images.pexels.com/photos/3429761/pexels-photo-3429761.jpeg?cs=srgb&dl=people-in-front-of-brown-concrete-building-while-feeding-3429761.jpg&fm=jpg" alt="Photo">
+                <div class="carousel-item__details">
+                    <div>
+                        <img src="https://img.icons8.com/flat_round/64/000000/play--v1.png">
+                        <img src="https://img.icons8.com/plasticine/100/000000/plus-2-math.png">
+                    </div>
+                    <p class="carousel-item__details--title">Titulo descriptivo</p>
+                    <p class="carousel-item__details--subtitle">Titulo descriptivo</p>
+                </div>
             </div>
-            <div class="carrusel__item">
-
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="https://images.pexels.com/photos/3429761/pexels-photo-3429761.jpeg?cs=srgb&dl=people-in-front-of-brown-concrete-building-while-feeding-3429761.jpg&fm=jpg" alt="Photo">
+                <div class="carousel-item__details">
+                    <div>
+                        <img src="https://img.icons8.com/flat_round/64/000000/play--v1.png">
+                        <img src="https://img.icons8.com/plasticine/100/000000/plus-2-math.png">
+                    </div>
+                    <p class="carousel-item__details--title">Titulo descriptivo</p>
+                    <p class="carousel-item__details--subtitle">Titulo descriptivo</p>
+                </div>
             </div>
-            <div class="carrusel__item">
-
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="https://images.pexels.com/photos/3429761/pexels-photo-3429761.jpeg?cs=srgb&dl=people-in-front-of-brown-concrete-building-while-feeding-3429761.jpg&fm=jpg" alt="Photo">
+                <div class="carousel-item__details">
+                    <div>
+                        <img src="https://img.icons8.com/flat_round/64/000000/play--v1.png">
+                        <img src="https://img.icons8.com/plasticine/100/000000/plus-2-math.png">
+                    </div>
+                    <p class="carousel-item__details--title">Titulo descriptivo</p>
+                    <p class="carousel-item__details--subtitle">Titulo descriptivo</p>
+                </div>
             </div>
         </div>
     </section>
